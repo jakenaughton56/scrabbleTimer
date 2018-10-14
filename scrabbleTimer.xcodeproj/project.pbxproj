@@ -102,8 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				2BC5D1F7217320F200B1AE7B /* Structures */,
-				2BC5D1F421730DC100B1AE7B /* Models */,
-				2BC5D1F321730D9A00B1AE7B /* Controllers */,
 				2BC5D1F221730D8B00B1AE7B /* Views */,
 				2BC5D1F121730D5C00B1AE7B /* Extras */,
 				2BC5D1C421730A8500B1AE7B /* Main.storyboard */,
@@ -146,20 +144,6 @@
 				2BC5D1C221730A8500B1AE7B /* TimerViewController.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		2BC5D1F321730D9A00B1AE7B /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		2BC5D1F421730DC100B1AE7B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		2BC5D1F7217320F200B1AE7B /* Structures */ = {

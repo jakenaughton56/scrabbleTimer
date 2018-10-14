@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,10 +49,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NgH-Sv-idF" userLabel="ButtonView">
                                 <rect key="frame" x="10" y="477" width="355" height="180"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1K-a1-2t0">
-                                        <rect key="frame" x="0.0" y="20" width="160" height="81"/>
-                                        <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Finished Turn"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1K-a1-2t0">
+                                        <rect key="frame" x="77.5" y="0.0" width="200" height="180"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Finished Turn" backgroundImage="RedButton">
+                                            <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="finishedTurnButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="gIj-20-94G"/>
                                         </connections>
@@ -61,11 +62,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="M1K-a1-2t0" firstAttribute="top" secondItem="NgH-Sv-idF" secondAttribute="top" constant="20" id="1dX-kW-n8M"/>
-                                    <constraint firstItem="M1K-a1-2t0" firstAttribute="leading" secondItem="NgH-Sv-idF" secondAttribute="leading" id="G0h-hG-rvh"/>
-                                    <constraint firstItem="M1K-a1-2t0" firstAttribute="height" secondItem="NgH-Sv-idF" secondAttribute="height" multiplier="0.45" id="Pbq-hM-PH3"/>
-                                    <constraint firstItem="M1K-a1-2t0" firstAttribute="width" secondItem="NgH-Sv-idF" secondAttribute="width" multiplier="0.45" id="bw8-rJ-Nvf"/>
+                                    <constraint firstItem="M1K-a1-2t0" firstAttribute="top" secondItem="NgH-Sv-idF" secondAttribute="top" id="1dX-kW-n8M"/>
+                                    <constraint firstItem="M1K-a1-2t0" firstAttribute="centerX" secondItem="NgH-Sv-idF" secondAttribute="centerX" id="83n-J7-P2z"/>
                                     <constraint firstAttribute="height" constant="180" id="ecv-gv-cKb"/>
+                                    <constraint firstAttribute="bottom" secondItem="M1K-a1-2t0" secondAttribute="bottom" id="nnP-HN-3ro"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -91,4 +91,7 @@
             <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RedButton" width="200" height="200"/>
+    </resources>
 </document>

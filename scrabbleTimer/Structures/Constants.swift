@@ -11,4 +11,6 @@ import Foundation
 struct Constants {
     static let playerOne = "Player One"
     static let playerTwo = "Player Two"
+    static let secondsInMinute = 60
+    static let startGameText = "Start Game"
 }

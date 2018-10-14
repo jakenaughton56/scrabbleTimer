@@ -13,27 +13,26 @@ class TimerViewController: UIViewController
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var playerLabel: UILabel!
     var timer = Timer()
-    var playerOne = Player(name: Constants.playerOne, minutes: 25, seconds: 60)
-    var playerTwo = Player(name: Constants.playerTwo, minutes: 25, seconds: 60)
+    var playerOne = Player(name: Constants.playerOne, seconds: 120)
+    var playerTwo = Player(name: Constants.playerTwo, seconds: 120)
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timerLabel.text = "\(playerOne.timer.seconds)"
-        playerLabel.text = playerOne.name
+        displayTime(player: playerOne)
+        playerLabel.text = Constants.startGameText
     }
     
     @IBAction func finishedTurnButton() {
         if playerLabel.text == playerOne.name {
             playerLabel.text = playerTwo.name
-            timerLabel.text = "\(playerTwo.timer.seconds)"
+            displayTime(player: playerTwo)
         } else {
             playerLabel.text = playerOne.name
-            timerLabel.text = "\(playerOne.timer.seconds)"
+            displayTime(player: playerOne)
         }
         self.runTimer()
     }
-    
     
     func runTimer() {
         timer.invalidate()
@@ -42,14 +41,23 @@ class TimerViewController: UIViewController
     
     @objc func updateTimer() {
         if playerLabel.text == playerOne.name {
-            playerOne.timer.seconds -= 1
-            timerLabel.text = "\(playerOne.timer.seconds)"
+            playerOne.secondsLeft -= 1
+            displayTime(player: playerOne)
         } else {
-            playerTwo.timer.seconds -= 1
-            timerLabel.text = "\(playerTwo.timer.seconds)"
+            playerTwo.secondsLeft -= 1
+            displayTime(player: playerTwo)
         }
     }
     
+    func displayTime(player: Player) {
+        if player.secondsLeft <= 0 {
+            timerLabel.text = String(format:"%02i:%02i", 0, 0)
+            return
+        }
+        let minutes = player.secondsLeft/Constants.secondsInMinute
+        let seconds = player.secondsLeft%60
+        timerLabel.text = String(format:"%02i:%02i", minutes, seconds)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

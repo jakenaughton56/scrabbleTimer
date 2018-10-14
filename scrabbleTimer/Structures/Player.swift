@@ -10,19 +10,11 @@ import Foundation
 
 struct Player {
     var name: String
-    var timer: PlayerTimer
+    var secondsLeft: Int
     
-    init(name: String, minutes: Int, seconds: Int) {
+    init(name: String, seconds: Int) {
         self.name = name
-        self.timer = PlayerTimer(minutes: minutes, seconds: seconds)
+        self.secondsLeft = seconds
     }
 }
 
-struct PlayerTimer {
-    var minutes: Int
-    var seconds: Int
-    init(minutes: Int, seconds: Int) {
-        self.minutes = minutes
-        self.seconds = seconds
-    }
-}
