@@ -13,7 +13,6 @@
 		2BC5D1C921730A8500B1AE7B /* scrabbleTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D1C721730A8500B1AE7B /* scrabbleTimer.xcdatamodeld */; };
 		2BC5D1CB21730A8800B1AE7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5D1CA21730A8800B1AE7B /* Assets.xcassets */; };
 		2BC5D1CE21730A8800B1AE7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5D1CC21730A8800B1AE7B /* LaunchScreen.storyboard */; };
-		2BC5D1D921730A8800B1AE7B /* scrabbleTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D1D821730A8800B1AE7B /* scrabbleTimerTests.swift */; };
 		2BC5D1E421730A8800B1AE7B /* scrabbleTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D1E321730A8800B1AE7B /* scrabbleTimerUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,6 @@
 		2BC5D1CD21730A8800B1AE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BC5D1CF21730A8800B1AE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BC5D1D421730A8800B1AE7B /* scrabbleTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scrabbleTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BC5D1D821730A8800B1AE7B /* scrabbleTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrabbleTimerTests.swift; sourceTree = "<group>"; };
 		2BC5D1DA21730A8800B1AE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BC5D1DF21730A8800B1AE7B /* scrabbleTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scrabbleTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC5D1E321730A8800B1AE7B /* scrabbleTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrabbleTimerUITests.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 		2BC5D1D721730A8800B1AE7B /* scrabbleTimerTests */ = {
 			isa = PBXGroup;
 			children = (
-				2BC5D1D821730A8800B1AE7B /* scrabbleTimerTests.swift */,
 				2BC5D1DA21730A8800B1AE7B /* Info.plist */,
 			);
 			path = scrabbleTimerTests;
@@ -269,7 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BC5D1D921730A8800B1AE7B /* scrabbleTimerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
