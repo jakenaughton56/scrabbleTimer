@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2BC5D1C121730A8500B1AE7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D1C021730A8500B1AE7B /* AppDelegate.swift */; };
-		2BC5D1C321730A8500B1AE7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D1C221730A8500B1AE7B /* ViewController.swift */; };
+		2BC5D1C321730A8500B1AE7B /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D1C221730A8500B1AE7B /* TimerViewController.swift */; };
 		2BC5D1C621730A8500B1AE7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5D1C421730A8500B1AE7B /* Main.storyboard */; };
 		2BC5D1C921730A8500B1AE7B /* scrabbleTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D1C721730A8500B1AE7B /* scrabbleTimer.xcdatamodeld */; };
 		2BC5D1CB21730A8800B1AE7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5D1CA21730A8800B1AE7B /* Assets.xcassets */; };
 		2BC5D1CE21730A8800B1AE7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5D1CC21730A8800B1AE7B /* LaunchScreen.storyboard */; };
 		2BC5D1E421730A8800B1AE7B /* scrabbleTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D1E321730A8800B1AE7B /* scrabbleTimerUITests.swift */; };
+		2BC5D1F92173212100B1AE7B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D1F82173212100B1AE7B /* Constants.swift */; };
+		2BC5D1FB2173313200B1AE7B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5D1FA2173313200B1AE7B /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		2BC5D1BD21730A8500B1AE7B /* scrabbleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrabbleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC5D1C021730A8500B1AE7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2BC5D1C221730A8500B1AE7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BC5D1C221730A8500B1AE7B /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		2BC5D1C521730A8500B1AE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BC5D1C821730A8500B1AE7B /* scrabbleTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = scrabbleTimer.xcdatamodel; sourceTree = "<group>"; };
 		2BC5D1CA21730A8800B1AE7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		2BC5D1DF21730A8800B1AE7B /* scrabbleTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scrabbleTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC5D1E321730A8800B1AE7B /* scrabbleTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrabbleTimerUITests.swift; sourceTree = "<group>"; };
 		2BC5D1E521730A8800B1AE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BC5D1F82173212100B1AE7B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2BC5D1FA2173313200B1AE7B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,13 +101,13 @@
 		2BC5D1BF21730A8500B1AE7B /* scrabbleTimer */ = {
 			isa = PBXGroup;
 			children = (
-				2BC5D1C021730A8500B1AE7B /* AppDelegate.swift */,
-				2BC5D1C221730A8500B1AE7B /* ViewController.swift */,
+				2BC5D1F7217320F200B1AE7B /* Structures */,
+				2BC5D1F421730DC100B1AE7B /* Models */,
+				2BC5D1F321730D9A00B1AE7B /* Controllers */,
+				2BC5D1F221730D8B00B1AE7B /* Views */,
+				2BC5D1F121730D5C00B1AE7B /* Extras */,
 				2BC5D1C421730A8500B1AE7B /* Main.storyboard */,
-				2BC5D1CA21730A8800B1AE7B /* Assets.xcassets */,
-				2BC5D1CC21730A8800B1AE7B /* LaunchScreen.storyboard */,
 				2BC5D1CF21730A8800B1AE7B /* Info.plist */,
-				2BC5D1C721730A8500B1AE7B /* scrabbleTimer.xcdatamodeld */,
 			);
 			path = scrabbleTimer;
 			sourceTree = "<group>";
@@ -123,6 +127,48 @@
 				2BC5D1E521730A8800B1AE7B /* Info.plist */,
 			);
 			path = scrabbleTimerUITests;
+			sourceTree = "<group>";
+		};
+		2BC5D1F121730D5C00B1AE7B /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				2BC5D1C021730A8500B1AE7B /* AppDelegate.swift */,
+				2BC5D1CA21730A8800B1AE7B /* Assets.xcassets */,
+				2BC5D1CC21730A8800B1AE7B /* LaunchScreen.storyboard */,
+				2BC5D1C721730A8500B1AE7B /* scrabbleTimer.xcdatamodeld */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		2BC5D1F221730D8B00B1AE7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BC5D1C221730A8500B1AE7B /* TimerViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2BC5D1F321730D9A00B1AE7B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2BC5D1F421730DC100B1AE7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2BC5D1F7217320F200B1AE7B /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				2BC5D1F82173212100B1AE7B /* Constants.swift */,
+				2BC5D1FA2173313200B1AE7B /* Player.swift */,
+			);
+			path = Structures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,9 +302,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BC5D1C321730A8500B1AE7B /* ViewController.swift in Sources */,
+				2BC5D1C321730A8500B1AE7B /* TimerViewController.swift in Sources */,
 				2BC5D1C121730A8500B1AE7B /* AppDelegate.swift in Sources */,
 				2BC5D1C921730A8500B1AE7B /* scrabbleTimer.xcdatamodeld in Sources */,
+				2BC5D1FB2173313200B1AE7B /* Player.swift in Sources */,
+				2BC5D1F92173212100B1AE7B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
